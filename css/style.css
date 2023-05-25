@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya", serif;
+}
+.text-main{
+  color: #ae9768;
+}
+.bg-main {
+  background-color: #ae9768;
+}
+nav a {
+  font-size: 1.1rem;
+}
+nav {
+  z-index: 99999;
+}
+nav li {
+  margin: 0 0.4rem;
+}
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+.nav-item a {
+  color: #fff ;
+}
+.nav-link:hover {
+  color: #b09b71 !important;
+}
+.active::before {
+  content: "";
+  height: 0.2rem;
+  width: 100%;
+  background-color: #ae9768;
+  position: absolute;
+  left: 0;
+  top: -20%;
+}
+.navbar{
+  transition: all .5s;
+}
+header {
+  background-image: url("../assets/img/drew-coffman-1872.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  bottom: 0;
+  top: 0%;
+  position: absolute;
+  z-index: 1;
+}
+header h1 span {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 91.2px;
+}
+header h1,
+header p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 44.64px;
+}
+.btn:first-child {
+  background-color: #ae9768;
+  color: #fff;
+}
+.btn:first-child:hover {
+  color: black;
+  background-color: #fff;
+}
+.btn {
+  font-weight: 600;
+  font-family: "Alegreya";
+  font-size: 1.1rem;
+}
+.mouse {
+  width: 2rem;
+  height: 3.5rem;
+  position: relative;
+  /* background-color: #ae9768; */
+  border: 0.1rem solid #ae9768;
+}
+.mouse::after {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 20%;
+    opacity: 0.3;
+  }
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 75%;
+    opacity: 0;
+  }
+}
+
+.list i {
+  color: #ae9768;
+}
+.about {
+  margin: 5rem 0;
+}
+.about h2,
+.offer h2,
+.contact h2 {
+  font-weight: 400;
+  line-height: 4.5rem;
+  font-size: 2.3rem;
+}
+.about p,
+.offer p,
+.contact h3,
+.contact li,
+.contact p,
+.about li {
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgb(104, 104, 104);
+}
+
+.list li,
+.contact li {
+  line-height: 4rem;
+}
+.bg-accent {
+  background-color: #f8f8f8;
+  padding: 5rem 0;
+}
+.offer {
+  margin: 4rem 0;
+}
+
+.baking h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.baking p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.baking h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.bg-footer {
+  background-color: #403d38;
+}
+
+footer ul li:not(:last-child) {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.148);
+}
+
+footer ul li {
+  line-height: 3rem;
+  font-size: 0.9rem;
+  z-index: 9999999;
+}
+footer p {
+  line-height: 2rem;
+}
+footer .contact-details {
+  position: relative;
+}
+footer .layer-map {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+footer .contact-details::after {
+  content: ".";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.1;
+  z-index: 1;
+  text-indent: -9999px;
+  background: url("../assets/img/contact-details-map.png") no-repeat center
+    center;
+}
+.contact-details li:not(:first-child):hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+.end {
+  background-color: #353330;
+}
+.fa-facebook:hover {
+  color: rgb(47, 94, 236) !important;
+}
+.fa-twitter:hover {
+  color: rgb(108, 142, 243) !important;
+}
+.fa-instagram:hover {
+  color: rgb(250, 93, 58) !important;
+}
+.fa-linkedin:hover {
+  color: rgb(58, 173, 250) !important;
+}
+
+#backToTop{
+  bottom:10%;
+  right: 5%;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+  /* transform: translate(0, -50%); */
+}
+
+#backToTop:hover i {
+  color: rgb(255, 255, 255) !important;
+
+}
