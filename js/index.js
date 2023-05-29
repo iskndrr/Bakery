@@ -5,10 +5,10 @@ $(window).scroll(function(){
     if(windowOffset > 100){
     $(".navbar").css("background","#fff");
     $(".navbar a").css("color","#000");
-    $(".logo").attr('src',"../assets/img/bakery-color.png")
+    $(".navbar-brand .logo").attr('src',"./assets/img/bakery-color.png")
     }else{
     $(".navbar").css("background","transparent");
-    $(".logo").attr('src',"../assets/img/bakery-light-1.png")
+    $(".navbar-brand .logo").attr('src',"./assets/img/bakery-light-1.png")
     $(".navbar a").css("color","#fff");
     }
     if(windowOffset >= footer){

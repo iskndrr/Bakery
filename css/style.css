@@ -188,7 +188,7 @@ footer .contact-details {
   position: relative;
 }
 footer .layer-map {
-  position: absolute;
+  position: sticky;
   width: 100%;
   top: 0;
   bottom: 0;
