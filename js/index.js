@@ -6,9 +6,12 @@ $(window).scroll(function(){
     $(".navbar").css("background","#fff");
     $(".navbar a").css("color","#000");
     $(".navbar-brand .logo").attr('src',"./assets/img/bakery-color.png")
+    $(".fa-bars").addClass("text-dark");
+
     }else{
     $(".navbar").css("background","transparent");
     $(".navbar-brand .logo").attr('src',"./assets/img/bakery-light-1.png")
+    $(".fa-bars").removeClass("text-dark");
     $(".navbar a").css("color","#fff");
     }
     if(windowOffset >= footer){
